@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+/* Responsive cho thiết bị di động (màn hình từ 768px trở xuống) */
+@media screen and (max-width: 768px) {
+    .site-header {
+        flex-direction: column; /* Đưa logo lên trên, menu xuống dưới */
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 45px; /* Thu nhỏ logo lại cho vừa màn hình điện thoại */
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các nút menu xuống dòng nếu quá chật */
+        justify-content: center;
+        gap: 5px;        /* Khoảng cách giữa các nút */
+    }
+
+    .nav-menu a {
+        margin-left: 0;  /* Xóa bỏ khoảng cách cứng cũ */
+        padding: 6px 10px; /* Thu nhỏ kích thước nút một chút */
+        font-size: 12px;
+        
+    }
+}
+.logo img {
+    height: 60px; /* Điều chỉnh kích thước logo theo ý muốn */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 16px;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+     
+}
+
+.nav-menu a:hover {
+    background-color: #0056b3;
+}
+
+/* ************** */
+.vechungtoi{
+    text-align: center;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-section h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cta-section p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-contact {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+}
+/* Container chung */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Bố cục 2 phần (chia đều 6-6 tương ứng 50% mỗi bên) */
+.row-about {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 30px;           /* Khoảng cách giữa hình và chữ */
+}
+
+/* Cột hình ảnh (chiếm 6 phần / 12) */
+.col-img {
+    flex: 0 0 50%;
+}
+
+.col-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bo tròn góc nhẹ cho đẹp */
+    display: block;
+    object-fit: cover;
+}
+
+/* Cột văn bản (chiếm 6 phần / 12) */
+.col-text {
+    flex: 0 0 50%;
+}
+
+.col-text p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsive cho điện thoại (dưới 768px): Chuyển thành xếp dọc */
+@media screen and (max-width: 768px) {
+    .row-about {
+        flex-direction: column; /* Xếp chồng lên nhau */
+    }
+    
+    .col-img, .col-text {
+        flex: 0 0 100%; /* Mỗi bên chiếm trọn 100% chiều rộng */
+    }
+}
