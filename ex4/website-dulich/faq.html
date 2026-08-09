@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<title>Grid Template for Bootstrap</title>
-	</head>
 
-	<body>
-		<h1><img src="img/logo.jpg" /></h1>
-		<div>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="faq.css">
+	<title>Grid Template for Bootstrap</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="site-header">
+		<h1 class="logo"><img src="img/logo.jpg" alt="Logo" /></h1>
+		<nav class="nav-menu" style="margin: 0% 3% 0% 0%;">
 			<a href="#">Trang chủ</a>
 			<a href="#">Dịch vụ</a>
 			<a href="#">Về chúng tôi</a>
 			<a href="#">FAQ</a>
 			<a href="#">Liên hệ</a>
-		</div>
-		<hr />
-		<h2>FAQ</h2>
-		<hr />
-		<div>
-			<p>1. Tôi có thể trả tiền thông qua PayPal?</p>
+		</nav>
+	</header>
+	<hr />
+	<h2 class="tieude">FAQ</h2>
+	<hr />
+	<div class="faq-list">
+		<!-- Thêm thuộc tính 'open' để mặc định mở câu 1 giống như ảnh mẫu -->
+		<details class="faq-item" open>
+			<summary>1. Tôi có thể trả tiền thông qua PayPal?</summary>
 			<p>Được. Chúng tôi chấp nhận việc chi trả qua PayPal.</p>
-		</div>
-		<div>
-			<p>2. Tôi có thể hủy bỏ đặt hàng?</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>2. Tôi có thể hủy bỏ đặt hàng?</summary>
 			<p>Được. Bạn có thể hủy bỏ đặt hàng bất khi nào bạn muốn.</p>
-		</div>
-		<div>
-			<p>3. Chính sách hoàn tiền như thế nào?</p>
-			<p>
-				Bạn có thể nhận được tiền hoàn trả 100% bất kể khi nào và vì bất kỳ lý
-				do gì.
-			</p>
-		</div>
-		<div>
-			<p>4. Làm thế nào để tôi có thể nhận được hóa đơn?</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>3. Chính sách hoàn tiền như thế nào?</summary>
+			<p>Bạn có thể nhận được tiền hoàn trả 100% bất kể khi nào và vì bất kỳ lý do gì.</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>4. Làm thế nào để tôi có thể nhận được hóa đơn?</summary>
 			<p>Bạn có thể nhận được hóa đơn thông qua email hoặc thư tín.</p>
+		</details>
+	</div>
+	<hr />
+	<!-- Footer -->
+	<footer>
+		<div class="footer-content">
+			<p>© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
+			<ul class="footer-nav">
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Dịch vụ</a></li>
+				<li><a href="#">Về chúng tôi</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
 		</div>
-		<hr />
-		<footer>
-			<div>
-				<p>© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
-				<ul>
-					<li><a href="#">Trang chủ</a></li>
-					<li><a href="#">Dịch vụ</a></li>
-					<li><a href="#">Về chúng tôi</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Liên hệ</a></li>
-				</ul>
-			</div>
-		</footer>
-	</body>
+	</footer>
+</body>
+
 </html>

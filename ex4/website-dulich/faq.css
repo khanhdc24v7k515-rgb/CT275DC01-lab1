@@ -1,0 +1,154 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive cho thiết bị di động (màn hình từ 768px trở xuống) */
+@media screen and (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        /* Đưa logo lên trên, menu xuống dưới */
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 45px;
+        /* Thu nhỏ logo lại cho vừa màn hình điện thoại */
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        /* Cho phép các nút menu xuống dòng nếu quá chật */
+        justify-content: center;
+        gap: 5px;
+        /* Khoảng cách giữa các nút */
+    }
+
+    .nav-menu a {
+        margin-left: 0;
+        /* Xóa bỏ khoảng cách cứng cũ */
+        padding: 6px 10px;
+        /* Thu nhỏ kích thước nút một chút */
+        font-size: 12px;
+    }
+}
+
+.logo img {
+    height: 60px;
+    /* Điều chỉnh kích thước logo theo ý muốn */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 16px;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    background-color: #0056b3;
+}
+
+/* .................................. */
+/* Footer */
+footer {
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+}
+
+.tieude {
+    text-align: center;
+}
+
+/* noi dung chinh giua */
+/* Định dạng từng thẻ FAQ Accordion */
+details.faq-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+/* Tiêu đề câu hỏi */
+details.faq-item summary {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    list-style: none;
+    /* Bỏ mũi tên mặc định */
+    user-select: none;
+    font-weight: normal;
+}
+
+/* Xóa mũi tên trên trình duyệt Chrome/Safari/Edge */
+details.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Nội dung câu trả lời hiển thị bên dưới */
+details.faq-item p {
+    padding: 12px 15px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+}
